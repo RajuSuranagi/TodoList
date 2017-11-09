@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
 
+import listReducer from './list_reducer';
+
 const rootReducer = combineReducers({
-    //Add reducers here
+    list: listReducer,
+
 });
 
 export default rootReducer;
