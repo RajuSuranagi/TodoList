@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect} from 'react-redux';
-
+import { Link } from 'react-router';
 import { getList } from '../actions/index.js';
 
 class List extends Component {
@@ -37,6 +37,13 @@ class List extends Component {
     render(){
         return (
             <div>
+                <div>
+                    <Link path="add">
+                        <button style="btn add-item-btn">Add an item</button>
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </Link>
+                </div>
+
                 {this.getTodoList()}
             </div>
         );
