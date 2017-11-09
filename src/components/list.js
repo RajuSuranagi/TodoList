@@ -39,8 +39,8 @@ class List extends Component {
             <div>
                 <div>
                     <Link path="add">
-                        <button style="btn add-item-btn">Add an item</button>
-                        <span class="glyphicon glyphicon-plus"></span>
+                        <button className="btn add-item-btn">Add an item</button>
+                        <span className="glyphicon glyphicon-plus"></span>
                     </Link>
                 </div>
 
